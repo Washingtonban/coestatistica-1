@@ -13,11 +13,11 @@ def main():
             ('Describe', 'Drama', 'Terror')
         )
         if genre == 'Describe':
-            run_describe(file)
+            wip()
         elif genre == 'Drama':
-            st.text('list_columns')
+            wip()
         elif genre == 'Terror':
-            st.text('Terror - OK')
+            wip()
 
 
 def show_df(file):
@@ -27,6 +27,9 @@ def show_df(file):
         st.markdown('Data Frame')
         st.dataframe(df.head(slider))
 
+def wip():
+    st.title('Work in progress')
+    st.image('./image/olhos.gif', use_column_width=True)
 
 def run_describe(file):
     st.title('Será aplicado o método Describe')
