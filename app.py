@@ -34,7 +34,7 @@ def run_describe(file):
     df = pd.read_csv(file)
     describe_columns = st.selectbox(
         'Escolha a coluna a ser analisada: ', (list(df.columns)
-                                                   ))
+                                               ))
 
 
 if __name__ == '__main__':
