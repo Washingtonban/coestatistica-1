@@ -8,7 +8,7 @@ def main():
     st.sidebar.image('./image/logo.png', use_column_width=True)
     file = st.sidebar.file_uploader('Escolha a base de dados que deseja analisar (.csv)', type='csv')
     if file is None:
-        st.title('Insira um arquivo CSV para começar!')
+        st.title('Insira um arquivo CSV para começar')
         st.image('./image/rick.gif', use_column_width=True)
     if file is not None:
         tratamento = st.sidebar.selectbox('Selecione a coluna :', ('Introdução', 'Visualizar Data Frame',
